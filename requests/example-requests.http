@@ -1,0 +1,33 @@
+###Register
+POST http://localhost:8080/user/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "user8",
+  "password": "password8",
+  "email": "ab8@cd.ef",
+  "phoneNumber": "123456788",
+  "preferredNotificationChannel": "EMAIL"
+}
+
+###AddBalance
+POST http://localhost:8080/user/balance
+Authorization: Basic user8 password8
+Content-Type: application/json
+Accept: application/json
+
+{
+  "promotionCode": "KOD_5"
+}
+
+###Transfer
+POST http://localhost:8080/transfer
+Authorization: Basic user8 password8
+Content-Type: application/json
+Accept: application/json
+
+{
+  "targetIdentifier": "JRSWRXFAPWQUBRFFGDR1",
+  "amount": 100
+}
