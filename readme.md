@@ -1,5 +1,9 @@
 # Zadanie Verestro
 
+### Skrypty:
+* [docker-compose for postgres](./docker/docker-compose.yml)
+* [przykładowe requesty http](./requests/example-requests.http)
+
 ### Wymagania:
 
 1.  Aplikacja powinna umożliwiać rejestrację użytkownika. Należy wystawić metodę http, która przyjmie dane:
